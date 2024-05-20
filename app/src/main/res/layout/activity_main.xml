@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/back"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/vegvisir_sin_fondo"
+        android:backgroundTint="#20FFFFFF"
+        android:gravity="center"
+        android:text="HAZ TU PROPIA HIDROMIEL COMO UN AUTENTICO VIKINGO"
+        android:textColor="@color/title"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/btnIngredientsEdit"
+        style="@style/ButtonStyle"
+        android:text="Editar ingredientes base"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculateByWater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        />
+
+    <Button
+        android:id="@+id/btnCalculateByWater"
+        style="@style/ButtonStyle"
+        android:text="Calcular ingredientes mediante AGUA"
+        app:layout_constraintBottom_toTopOf="@id/btnCalculateByHoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngredientsEdit"
+        />
+
+    <Button
+        android:id="@+id/btnCalculateByHoney"
+        style="@style/ButtonStyle"
+        android:text="Calcular ingredientes mediante MIEL"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculateByYeast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculateByWater"
+        />
+
+    <Button
+        android:id="@+id/btnCalculateByYeast"
+        style="@style/ButtonStyle"
+        android:text="Calcular ingredientes mediante LEVADURA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculateByHoney"
+        android:elevation="4dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main_edit"
+    tools:context=".EditBaseIngredients"
+    android:background="@color/back">
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/titleEditIngredients"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:text="INDICA LOS INGREDIENTES DE REFERENCIA DE TU HIDROMIEL"
+            android:gravity="center"
+            android:background="@drawable/vegvisir_sin_fondo"
+            android:backgroundTint="#20FFFFFF"
+            android:textColor="@color/title"
+            android:textSize="27sp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <!--linear layout all buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="start"
+        >
+        <!--BUTTON AGUA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            >
+
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:id="@+id/inputWater"
+                android:gravity="center"
+                android:background="@drawable/input_shadow"
+                android:layout_width="300dp"
+                android:hint="Introduce la cantidad de AGUA"
+                android:textColor="@color/back"
+                android:textColorHint="@color/back"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                ></EditText>
+
+            <Spinner
+                android:layout_marginStart="10dp"
+                android:id="@+id/spinnerLitersWater"
+                android:entries="@array/spinner_values_Liters"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="20px"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                ></Spinner>
+        </LinearLayout>
+
+        <!--BUTTON MIEL-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            >
+
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:id="@+id/inputHoney"
+                android:gravity="center"
+                android:background="@drawable/input_shadow"
+                android:layout_width="300dp"
+                android:hint="Introduce la cantidad de MIEL"
+                android:textColor="@color/back"
+                android:textColorHint="@color/back"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                ></EditText>
+
+            <Spinner
+                android:layout_marginStart="10dp"
+                android:id="@+id/spinnerGramsHoney"
+                android:entries="@array/spinner_values_Grams"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="20px"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+
+                ></Spinner>
+        </LinearLayout>
+
+
+        <!--LEVADURA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            >
+
+
+            <EditText
+                android:layout_marginStart="10dp"
+                android:id="@+id/inputYeast"
+                android:gravity="center"
+                android:background="@drawable/input_shadow"
+                android:layout_width="300dp"
+                android:hint="Introduce la cantidad de LEVADURA"
+                android:textColor="@color/back"
+                android:textColorHint="@color/back"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                ></EditText>
+
+            <Spinner
+                android:layout_marginStart="10dp"
+                android:id="@+id/spinnerGramsYeast"
+                android:entries="@array/spinner_values_Grams"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="20px"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+
+                ></Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackEditIngredients"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ATRÁS"
+
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+
+            ></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
